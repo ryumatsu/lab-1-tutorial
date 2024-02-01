@@ -1,0 +1,148 @@
+// part I: Problem Set
+1.) /* Ryuichi Matsushita CIN302948989 */
+
+2.) let base = 10; 
+    let height = 5; 
+    let area = 0.5 * base * height;
+
+4.) console.log("The sum of 5 and 3 is: " + (5 + 3));
+
+5.) const age = 33;
+    console.log(`My age is ${age} years old.`);
+
+6.) console.log("In JavaScript, we use the backslash (\\) to escape special characters.");
+
+7.) console.log("Einstein once said: \"Life is like riding a bicycle. To keep your balance, you must keep moving.\"");
+
+8.) let a = 10; 
+    let b = 5; 
+    let result = a >= b;
+    console.log(result);
+
+9.) let num1 = 10; 
+    let num2 = 5; 
+
+    let result = num1 > num2 && num2 > 0;
+
+    console.log(result);
+
+10.) let number1 = 5;
+    let number2 = 8; 
+
+    let result = number1 === number2 || number2 < 10;
+
+    console.log(result); 
+
+    // Part II: Implementing a Basic Calculator
+
+   // HTML:
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="operand1">
+      <input type="text" id="operand2">
+      <span>=</span>
+      <input type="text" id="result" disabled><br>
+      <button type="button" onclick="add()">+</button>
+      <button type="button" onclick="substract()">-</button>
+      <button type="button" onclick="clearInput()" class="clear">C</button><br>
+      <button type="button" onclick="multiply()">x</button>
+      <button type="button" onclick="divide()">/</button><br>
+    </form>
+  </body>
+</html>
+
+
+
+// CSS:
+span {
+    font-size: 200%;  
+}
+
+input {
+  margin: 5px 5px 5px 0;
+  padding: 0;
+  width: 100px;
+  height: 40px;
+  font-size: 200%;  
+  text-align: right;
+}
+
+button {
+  margin: 5px 5px 5px 0;
+  padding: 0;
+  width: 105px;
+  height: 50px;
+  font-size: 200%;
+}
+
+.clear {
+  width: 125px;
+}
+
+
+
+
+
+
+// JavaScript:
+// Add the values from input fields
+function add() {
+   let operand1 = document.querySelector("#operand1").value;
+   operand1 = parseInt(operand1, 10);
+
+   let operand2 = document.querySelector("#operand2").value;
+   operand2 = parseInt(operand2, 10);
+
+   let result = operand1 + operand2;
+
+   document.querySelector("#result").value = result;
+}
+
+// Substract the values from input fields
+function subtract() {
+   let operand1 = parseInt(document.querySelector("#operand1").value, 10);
+   let operand2 = parseInt(document.querySelector("#operand2").value, 10);
+
+   let result = operand1 - operand2;
+
+   document.querySelector("#result").value = result;
+}
+
+// Multiply the values from input fields
+function multiply() {
+   let operand1 = parseInt(document.querySelector("#operand1").value, 10);
+   let operand2 = parseInt(document.querySelector("#operand2").value, 10);
+
+   let result = operand1 * operand2;
+
+   document.querySelector("#result").value = result;
+}
+
+// Divide the values from input fields
+function divide() {
+   let operand1 = parseInt(document.querySelector("#operand1").value, 10);
+   let operand2 = parseInt(document.querySelector("#operand2").value, 10);
+
+   let result = operand1 / operand2;
+
+   document.querySelector("#result").value = result;
+}
+
+// Clear input fields
+function clearInput() {
+	document.querySelector("#operand1").value = "";
+	document.querySelector("#operand2").value = "";
+  document.querySelector("#result").value = "";
+}
+
+
+
+
+
+
+
+
