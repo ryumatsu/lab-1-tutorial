@@ -1,0 +1,86 @@
+/* label,
+input,
+button,
+textarea {
+   margin: 5px;
+}
+.large {
+   width: 200px;
+}
+textarea {
+   width: 300px;
+   height: 100px;
+}
+.center {
+   text-align: center;
+}
+#rabbit-couple {
+   width: 50px;
+}
+input {
+   margin: 5px 5px 5px 0;
+   padding: 0;
+   width: 100px;
+   height: 40px;
+   font-size: 200%;
+   text-align: right;
+}
+button {
+   margin: 5px 5px 5px 0;
+   padding: 0;
+   width: 105px;
+   height: 50px;
+   font-size: 200%;
+} */
+li[data-page-no="2"] .calculator-container {
+   display: flex;
+   justify-content: space-between;
+}
+
+li[data-page-no="2"] form {
+   flex: 1;
+   margin: 0 10px;
+}
+
+li[data-page-no="2"] input,
+li[data-page-no="2"] button,
+li[data-page-no="2"] label {
+   margin: 5px 0;
+   display: block;
+}
+
+li[data-page-no="2"] input[type="number"],
+li[data-page-no="2"] input[type="text"] {
+   width: 90%;
+   padding: 5px;
+}
+
+li[data-page-no="2"] button {
+   width: auto;
+   padding: 5px 10px;
+}
+
+li[data-page-no="2"] label {
+   margin-bottom: 5px;
+}
+
+.small-text-button {
+   font-size: 12px;
+   padding: 5px 10px;
+}
+.simulation-BTN {
+   font-size: 20px;
+   padding: 5px 10px;
+}
+.gst-btn {
+   font-size: 20px;
+   padding: 5px 10px;
+}
+.bmi-btn {
+   font-size: 20px;
+   padding: 5px 10px;
+}
+.fibonacci-btn {
+   font-size: 20px;
+   padding: 5px 10px;
+}

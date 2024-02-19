@@ -27,7 +27,7 @@ button {
    display: flex;
    justify-content: center;
    align-items: center;
-   min-height: 100vh; /* Adjust this value based on your header/footer size */
+   min-height: 100vh;
 }
 
 .cd-hero-slider {
@@ -44,4 +44,16 @@ form {
    display: center;
    flex-direction: column;
    align-items: center;
+}
+li[data-page-no="2"] form:first-of-type .button-container {
+   display: flex; /* Ensures flexbox is enabled */
+   flex-direction: row; /* Explicitly sets the buttons to align in a row */
+   justify-content: center; /* Centers the buttons within the container */
+   flex-wrap: wrap; /* Allows buttons to wrap to the next line if needed */
+   gap: 10px; /* Adds space between buttons */
+}
+
+li[data-page-no="2"] form:first-of-type .button-container button {
+   flex: 0 1 auto; /* Allows buttons to shrink but not grow, keeping them aligned */
+   margin: 2px; /* Ensures minimal space around buttons to prevent wrapping */
 }
